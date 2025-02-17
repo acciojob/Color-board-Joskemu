@@ -1,1 +1,37 @@
 /*  your css code here. If applicable */
+/* Resetting the margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+/* Container for the squares */
+.container {
+  display: grid;
+  grid-template-columns: repeat(40, 30px); /* 40 boxes per row */
+  grid-template-rows: repeat(20, 30px);   /* 20 rows */
+  gap: 5px;
+}
+
+/* Each square box */
+.square {
+  width: 30px;
+  height: 30px;
+  background-color: #ccc;
+  transition: background-color 1s ease; /* Smooth transition for color change */
+}
+
+/* Hover effect for the squares */
+.square:hover {
+  background-color: #ff6347; /* Change to a red color on hover */
+}
